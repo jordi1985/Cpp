@@ -318,6 +318,8 @@ int main() {
 /////////////////////////////////////////////
 //Virtuales y abstractas + herencia + 
 /////////////////////////////////////////////
+/*
+
 class Instrument {
 public:
     virtual void MakeSound() = 0;
@@ -351,3 +353,59 @@ int main (){
     system("pause");
     return 0;
  }
+ */
+ 
+/////////////////////////////////////////////
+//Sobrecarga de funciones
+/////////////////////////////////////////////
+
+int main() {
+    car1 +
+}
+
+/////////////////////////////////////////////
+//clases y funciones amigas 
+/////////////////////////////////////////////
+/*
+class EquilaterTriangle {
+private:
+    float a;
+    float circumference;
+    float area;
+public:
+    void setA(float length){
+        a = length;
+        circumference = a*3;
+        //raiz de 3 = 1,73
+        area = (1.73*a*a)/4;
+    }
+
+//funcion amiga    
+//friend void PrintResults(EquilaterTriangle);
+//clase amiga
+friend class Homework;
+
+};
+class Homework {
+public:
+    void PrintResults(EquilaterTriangle et) {
+        cout << "Circumference = " << et.circumference << endl;
+        cout << "area = " << et.area << endl;
+    }
+};
+//funcion global
+/* void PrintResults(EquilaterTriangle et) {
+    cout << "Circumference = " << et.circumference << endl;
+    cout << "area = " << et.area << endl;
+}
+int main() {
+
+    EquilaterTriangle et;
+    et.setA(3);
+    Homework h;
+    h.PrintResults(et);
+
+    system("pause");
+    return 0;
+}
+*/
