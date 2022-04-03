@@ -1,2 +1,4 @@
 tests/
+C++/Qt/
 !tests/test.txt
+!C++/Qt/Qt.txt
