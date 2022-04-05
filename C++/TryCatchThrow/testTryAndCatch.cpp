@@ -4,7 +4,7 @@ class A {
 public:
     A(){}
     ~A()noexcept(false) {
-        throw 42;
+        //throw 42;
     }
 };
 
