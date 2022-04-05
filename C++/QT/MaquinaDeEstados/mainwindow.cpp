@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     s2 = new QState();
     s2->assignProperty(ui ->stateLabel, "text", "Current State: 2");
-    s2->assignProperty(ui->pushButton_2, "geometry" , QRect(200, 50, 140, 100));
+    s2->assignProperty(ui->pushButton_2, "geometry" , QRect(200, 50, 140, 5));
 
     // Create Animation
 

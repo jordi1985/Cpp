@@ -47,7 +47,8 @@
         "smfinal": "cpp",
         "chrono": "cpp",
         "ratio": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "ejemplomook": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
