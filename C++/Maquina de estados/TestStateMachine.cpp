@@ -97,7 +97,7 @@ public:
     void Init() {
         currentState= new StateInitial();
     }
-    void Update() {
+    void Update() { 
         currentState->UpdateState();
     }
     void TransitionTo(char c) {
@@ -106,7 +106,7 @@ public:
         switch  (*weComeFromState) {
             case 'A':
                 if (c =='b') {
-                     currentState = new StateDisconnected();
+                     currentState = new StateConnecting();
                 } else if (c =='d') { 
                      currentState = new StateInitial();
                 } else { std::cout << "not a correct option" << std::endl; 
@@ -116,7 +116,7 @@ public:
 
             case 'B':
                 if (c =='c') {
-                    currentState = new StateConnected;
+                    currentState = new StateConnected();
                 } else if (c =='d') { 
                      currentState = new StateInitial();
                 } else { std::cout << "not a correct option" << std::endl; 
